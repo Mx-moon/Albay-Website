@@ -881,11 +881,12 @@ footer{
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px){
+/* RESPONSIVE */
+@media (max-width:992px){
     .navbar{
-        padding:18px 25px;
+        padding:16px 22px;
         flex-direction:column;
-        gap:15px;
+        gap:14px;
     }
 
     .logo{
@@ -893,13 +894,47 @@ footer{
     }
 
     .navlinks{
+        display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        gap:18px;
+        gap:16px;
+        width:100%;
+    }
+
+    .navlinks li{
+        flex:0 1 auto;
+    }
+
+    .navlinks a{
+        font-size:14px;
+        text-align:center;
+    }
+
+    .menu{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .navlinks li:last-child .menu{
+        left:50%;
+        right:auto;
+        transform:translateX(-50%);
     }
 
     .pagetitle h1{
         font-size:42px;
+    }
+
+    .pagetitle p,
+    .about p,
+    .intro p,
+    .hotelintro p,
+    .guideintro p,
+    .act p,
+    .tip p,
+    .hoteltips p,
+    .transporttips p{
+        font-size:16px;
     }
 
     .about h2,
@@ -907,8 +942,11 @@ footer{
     .hotelintro h2,
     .guideintro h2,
     .amenities h2,
-    .hoteltips h2{
-        font-size:32px;
+    .hoteltips h2,
+    .act h2,
+    .tip h2,
+    .transporttips h2{
+        font-size:30px;
     }
 
     .zigzagitem,
@@ -928,32 +966,36 @@ footer{
     .guideimg img{
         height:320px;
     }
+
+    .restaurantsection,
+    .hotelsection,
+    .hotelfeatures,
+    .transportguideinfo{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .zigzagbox,
+    .guidebox,
+    .featurebox,
+    .hotelmap,
+    .restaurantcard,
+    .hotelcard,
+    .transportcard{
+        border-radius:35px;
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
     .navbar{
-        padding:15px 20px;
+        padding:14px 16px;
     }
 
     .navlinks{
-        gap:12px;
+        gap:10px;
     }
 
     .navlinks a{
-        font-size:14px;
-    }
-
-    .menu{
-        position:static;
-        display:none;
-        width:100%;
-        margin-top:8px;
-        box-shadow:none;
-        border-radius:16px;
-    }
-
-    .dropdown:hover .menu{
-        display:block;
+        font-size:13px;
     }
 
     .pagetitle{
@@ -964,20 +1006,8 @@ footer{
         font-size:34px;
     }
 
-    .pagetitle p,
-    .about p,
-    .intro p,
-    .hotelintro p,
-    .guideintro p,
-    .act p,
-    .tip p,
-    .hoteltips p,
-    .transporttips p{
+    .pagetitle p{
         font-size:16px;
-    }
-
-    .about h2{
-        font-size:30px;
     }
 
     .zigzagbox,
@@ -987,26 +1017,19 @@ footer{
     .restaurantcard,
     .hotelcard,
     .transportcard{
-        border-radius:30px;
+        border-radius:28px;
         padding:20px;
     }
 
     .zigzagimg img,
     .guideimg img{
-        height:250px;
-        border-radius:30px;
+        height:240px;
+        border-radius:28px;
     }
 
-    .restaurantsection,
-    .hotelsection,
-    .hotelfeatures,
-    .transportguideinfo{
-        grid-template-columns:1fr;
-    }
-
-    .cardimg,
-    .hotelimg{
-        height:220px;
+    .zigzagtext h3,
+    .guidetext h3{
+        font-size:28px;
     }
 
     .cardtext h3,
@@ -1014,9 +1037,17 @@ footer{
         font-size:24px;
     }
 
-    .zigzagtext h3,
-    .guidetext h3{
-        font-size:28px;
+    .restaurantsection,
+    .hotelsection,
+    .hotelfeatures,
+    .transportguideinfo{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .cardimg,
+    .hotelimg{
+        height:220px;
     }
 
     .beachmap iframe,
@@ -1025,9 +1056,9 @@ footer{
         border-radius:20px;
     }
 
-    .amenitylist,
+    .categories,
     .hotelcategories,
-    .categories{
+    .amenitylist{
         gap:10px;
     }
 
@@ -1039,26 +1070,26 @@ footer{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width:480px){
     .navbar{
-        padding:12px 15px;
+        padding:12px 12px;
     }
 
     .circle{
-        width:55px;
-        height:55px;
+        width:50px;
+        height:50px;
     }
 
     .logo h2{
-        font-size:18px;
+        font-size:16px;
     }
 
     .navlinks{
-        gap:10px;
+        gap:8px;
     }
 
     .navlinks a{
-        font-size:13px;
+        font-size:12px;
     }
 
     .pagetitle h1{
@@ -1085,18 +1116,23 @@ footer{
     .hotelcard,
     .transportcard{
         border-radius:22px;
+        padding:16px;
     }
 
     .zigzagimg img,
-    .guideimg img,
+    .guideimg img{
+        height:200px;
+        border-radius:22px;
+    }
+
     .cardimg,
     .hotelimg{
-        height:200px;
+        height:190px;
     }
 
     .cardtext,
     .hoteltext{
-        padding:18px;
+        padding:16px;
     }
 
     .cardtext h3,
@@ -1108,6 +1144,13 @@ footer{
 
     .beachmap iframe,
     .hotelmap iframe{
-        height:200px;
+        height:190px;
+    }
+
+    .catbtn,
+    .hotelbtn,
+    .amenityitem{
+        width:100%;
+        text-align:center;
     }
 }

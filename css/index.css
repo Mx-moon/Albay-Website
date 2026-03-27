@@ -356,7 +356,12 @@ footer h2{
 }
 
 /* RESPONSIVE */
+/* RESPONSIVE */
 @media (max-width:1200px){
+    .top{
+        grid-template-columns:1fr;
+    }
+
     .grid{
         grid-template-columns:repeat(2, 1fr);
     }
@@ -365,16 +370,32 @@ footer h2{
         grid-template-columns:repeat(2, 1fr);
     }
 
-    .top{
-        grid-template-columns:1fr;
+    .textbg{
+        padding-left:70px;
+    }
+
+    .text h1{
+        font-size:62px;
+    }
+
+    .sectiontitle h2{
+        font-size:50px;
+    }
+
+    .trending-header h2{
+        font-size:46px;
+    }
+
+    .attraction img{
+        height:500px;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:992px){
     .navbar{
+        padding:16px 22px;
         flex-direction:column;
-        gap:20px;
-        padding:20px;
+        gap:14px;
     }
 
     .logo{
@@ -382,47 +403,167 @@ footer h2{
     }
 
     .navlinks{
+        display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        gap:20px;
+        gap:16px;
+        width:100%;
+    }
+
+    .navlinks a{
+        font-size:14px;
     }
 
     .textbg{
-        padding:40px 20px;
+        height:auto;
+        min-height:75vh;
+        padding:70px 25px;
         justify-content:center;
         text-align:center;
     }
 
     .text{
+        max-width:700px;
         text-align:center;
     }
 
     .line{
-        margin:0 auto 30px;
+        margin:0 auto 25px;
     }
 
     .text h1{
-        font-size:48px;
+        font-size:52px;
     }
 
     .text p{
         font-size:20px;
     }
 
+    section{
+        padding:55px 25px;
+    }
+
     .sectiontitle h2{
-        font-size:38px;
+        font-size:40px;
+    }
+
+    .sectiontitle p{
+        font-size:17px;
+    }
+
+    .trending-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
     }
 
     .trending-header h2{
         font-size:38px;
     }
 
+    .attraction-overlay{
+        padding:25px;
+    }
+
     .attraction-overlay h3{
+        font-size:34px;
+    }
+
+    .attraction-text p{
+        font-size:18px;
+    }
+
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+        gap:18px;
+    }
+
+    .categorygrid{
+        grid-template-columns:repeat(2, 1fr);
+        gap:18px;
+    }
+
+    .categorycard{
+        height:240px;
+        border-radius:35px;
+    }
+}
+
+@media (max-width:768px){
+    .navbar{
+        padding:14px 16px;
+    }
+
+    .navlinks{
+        gap:10px;
+    }
+
+    .navlinks a{
+        font-size:13px;
+    }
+
+    .menu{
+        left:50%;
+        transform:translateX(-50%);
+        min-width:190px;
+    }
+
+    .textbg{
+        min-height:68vh;
+        padding:60px 20px;
+    }
+
+    .text h1{
+        font-size:42px;
+    }
+
+    .text p{
+        font-size:18px;
+    }
+
+    section{
+        padding:45px 20px;
+    }
+
+    .sectiontitle h2{
+        font-size:34px;
+    }
+
+    .trending-header h2{
         font-size:32px;
+    }
+
+    .top{
+        gap:25px;
+    }
+
+    .attraction{
+        border-radius:22px;
+    }
+
+    .attraction img{
+        height:360px;
+    }
+
+    .attraction-overlay h3{
+        font-size:28px;
+    }
+
+    .location{
+        font-size:16px;
+    }
+
+    .attraction-text p{
+        font-size:16px;
+        margin-bottom:18px;
     }
 
     .grid{
         grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:230px;
     }
 
     .categorygrid{
@@ -430,10 +571,102 @@ footer h2{
     }
 
     .categorycard{
+        height:220px;
         border-radius:30px;
     }
 
+    .categoryoverlay{
+        font-size:20px;
+    }
+}
+
+@media (max-width:480px){
+    .navbar{
+        padding:12px 12px;
+    }
+
+    .circle{
+        width:50px;
+        height:50px;
+    }
+
+    .logo h2{
+        font-size:16px;
+    }
+
+    .navlinks{
+        gap:8px;
+    }
+
+    .navlinks a{
+        font-size:12px;
+    }
+
+    .textbg{
+        min-height:62vh;
+        padding:50px 15px;
+    }
+
+    .text h1{
+        font-size:34px;
+    }
+
+    .text p{
+        font-size:16px;
+    }
+
+    section{
+        padding:38px 15px;
+    }
+
+    .sectiontitle h2{
+        font-size:28px;
+    }
+
+    .sectiontitle p{
+        font-size:15px;
+    }
+
+    .trending-header h2{
+        font-size:27px;
+    }
+
     .attraction img{
-        height:400px;
+        height:280px;
+    }
+
+    .attraction-overlay{
+        padding:18px;
+    }
+
+    .attraction-overlay h3{
+        font-size:22px;
+    }
+
+    .tag{
+        font-size:12px;
+        padding:8px 14px;
+    }
+
+    .card{
+        border-radius:16px;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    .cardtext{
+        padding:15px;
+    }
+
+    .categorycard{
+        height:190px;
+        border-radius:24px;
+    }
+
+    .categoryoverlay{
+        font-size:18px;
+        padding:15px;
     }
 }
