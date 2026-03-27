@@ -1,0 +1,1113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#F2F2F2;
+    color:#1A1A1A;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* NAVBAR */
+.navbar{
+    width:100%;
+    background:#FFFFFF;
+    border:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    overflow:visible;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    transform:scale(1.2);
+    transform-origin:left center;
+}
+
+.circle{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#EAD7A1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.10);
+    overflow:hidden;
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.logo h2{
+    font-size:20px;
+    color:#1A1A1A;
+}
+
+.logo span{
+    color:#D4AF37;
+}
+
+.navlinks{
+    list-style:none;
+    display:flex;
+    gap:35px;
+    align-items:center;
+}
+
+.navlinks li{
+    position:relative;
+}
+
+.navlinks a{
+    color:#2E5E3E;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navlinks a:hover{
+    color:#FFD700;
+}
+
+.navlinks a.active{
+    color:#D4AF37;
+}
+
+.dropdown{
+    position:relative;
+}
+
+/* DROPDOWN */
+.menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:210px;
+    background:#ffffff;
+    border:1px solid #dbe8e2;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    padding:8px 0;
+    z-index:9999;
+    margin-top:0;
+}
+
+.navlinks li:last-child .menu{
+    left:auto;
+    right:0;
+}
+
+.menu a{
+    display:block;
+    padding:10px 16px;
+    font-size:14px;
+    color:#2E5E3E;
+    white-space:nowrap;
+}
+
+.menu a:hover{
+    background:#f5f5f5;
+    color:#D4AF37;
+}
+
+.dropdown:hover .menu{
+    display:block;
+}
+
+/* TITLE */
+.pagetitle{
+    text-align:center;
+    margin:60px auto;
+    width:90%;
+}
+
+.pagetitle h1{
+    font-size:60px;
+    color:#2E5E3E;
+}
+
+.pagetitle p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* BLUE LINES */
+.titlelines{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.line{
+    height:4px;
+    background:#2C7BE5;
+    border-radius:20px;
+}
+
+.longline{
+    width:160px;
+}
+
+.shortline{
+    width:80px;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    width:90%;
+    margin:40px auto 60px;
+}
+
+.about h2{
+    font-size:40px;
+    color:#2E5E3E;
+}
+
+.about h2::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+    border-radius:20px;
+}
+
+.about p{
+    margin-top:10px;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* ZIGZAG SECTION */
+.zigzagsection{
+    width:90%;
+    margin:50px auto;
+}
+
+.zigzagbox{
+    background:#FAF7EF;
+    border:1px solid #E7D9B0;
+    border-radius:50px;
+    padding:30px 35px;
+    margin-bottom:40px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.zigzagbox:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 26px rgba(0,0,0,0.12);
+}
+
+.zigzagitem{
+    display:flex;
+    gap:40px;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.zigzagimg{
+    width:50%;
+}
+
+.zigzagimg img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:50px;
+}
+
+.zigzagtext{
+    width:50%;
+}
+
+.zigzagtext h3{
+    font-size:40px;
+    color:#A66B1F;
+}
+
+.zigzagtext h3::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#2C7BE5;
+    margin-top:8px;
+}
+
+.zigzagtext p{
+    margin:15px 0;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* MAP */
+.beachmap iframe{
+    width:100%;
+    height:250px;
+    border:none;
+    border-radius:30px;
+}
+
+/* CLEAN SECTIONS */
+.act,
+.tip{
+    text-align:center;
+    width:90%;
+    margin:50px auto;
+}
+
+.act h2,
+.tip h2{
+    color:#2E5E3E;
+    font-size:32px;
+}
+
+.act h2::after,
+.tip h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+    border-radius:20px;
+}
+
+.act p,
+.tip p{
+    margin-top:10px;
+    line-height:1.8;
+}
+
+/* RESTAURANT DESIGN */
+.intro{
+    width:90%;
+    max-width:950px;
+    margin:20px auto 10px;
+    text-align:center;
+}
+
+.intro h2{
+    font-size:38px;
+    color:#2E5E3E;
+}
+
+.intro h2::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+}
+
+.intro p{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+}
+
+.categories{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto 20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.catbtn{
+    padding:12px 24px;
+    background:#FFFFFF;
+    border:1px solid #D4AF37;
+    border-radius:50px;
+    color:#2E5E3E;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.catbtn:hover{
+    background:#2C7BE5;
+    color:#FFFFFF;
+    border-color:#2C7BE5;
+}
+
+.restaurantsection{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto 70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    gap:30px;
+}
+
+.restaurantcard{
+    background:#FFFFFF;
+    border-radius:50px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.restaurantcard:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 26px rgba(0,0,0,0.12);
+}
+
+.cardimg{
+    height:230px;
+}
+
+.cardimg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.cardtext{
+    padding:22px;
+}
+
+.cardtext h3{
+    font-size:28px;
+    color:#A66B1F;
+}
+
+.cardtext h3::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    background:#2C7BE5;
+    margin-top:6px;
+}
+
+.cardtext p{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.cardtext ul{
+    list-style:none;
+    margin-bottom:18px;
+}
+
+.cardbtn{
+    display:inline-block;
+    padding:11px 22px;
+    background:#2E5E3E;
+    color:#fff;
+    border-radius:50px;
+}
+
+.cardbtn:hover{
+    background:#2C7BE5;
+}
+
+/* HOTEL PAGE DESIGN */
+.hotelintro{
+    width:90%;
+    max-width:950px;
+    margin:20px auto 10px;
+    text-align:center;
+}
+
+.hotelintro h2{
+    font-size:38px;
+    color:#2E5E3E;
+}
+
+.hotelintro h2::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+    border-radius:20px;
+}
+
+.hotelintro p{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+    margin-top:15px;
+}
+
+.hotelcategories{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto 20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.hotelbtn{
+    padding:12px 24px;
+    background:#FFFFFF;
+    border:1px solid #D4AF37;
+    border-radius:50px;
+    color:#2E5E3E;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.hotelbtn:hover{
+    background:#2C7BE5;
+    color:#FFFFFF;
+    border-color:#2C7BE5;
+}
+
+.hotelsection{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto 70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    gap:30px;
+}
+
+.hotelcard{
+    background:#FFFFFF;
+    border-radius:50px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.hotelcard:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 26px rgba(0,0,0,0.12);
+}
+
+.hotelimg{
+    height:230px;
+}
+
+.hotelimg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hoteltext{
+    padding:22px;
+}
+
+.hoteltext h3{
+    font-size:28px;
+    color:#A66B1F;
+}
+
+.hoteltext h3::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    background:#2C7BE5;
+    margin-top:6px;
+}
+
+.hoteltext p{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:12px;
+    color:#333;
+}
+
+.hoteltext ul{
+    list-style:none;
+    margin-bottom:18px;
+}
+
+.hoteltext ul li{
+    margin-bottom:8px;
+}
+
+.hotelprice{
+    display:inline-block;
+    margin-bottom:15px;
+    padding:8px 16px;
+    background:#FAF7EF;
+    border:1px solid #E7D9B0;
+    border-radius:30px;
+    color:#2E5E3E;
+    font-weight:600;
+}
+
+.hotelcardbtn{
+    display:inline-block;
+    padding:11px 22px;
+    background:#2E5E3E;
+    color:#fff;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.hotelcardbtn:hover{
+    background:#2C7BE5;
+}
+
+/* FEATURES */
+.hotelfeatures{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto 60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+.featurebox{
+    background:#FAF7EF;
+    border:1px solid #E7D9B0;
+    border-radius:50px;
+    padding:30px 25px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+}
+
+.featurebox h3{
+    font-size:24px;
+    color:#2E5E3E;
+}
+
+.featurebox h3::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+}
+
+.featurebox p{
+    margin-top:14px;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* AMENITIES */
+.amenities{
+    width:90%;
+    max-width:1100px;
+    margin:20px auto 60px;
+    text-align:center;
+}
+
+.amenities h2{
+    font-size:36px;
+    color:#2E5E3E;
+}
+
+.amenities h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+}
+
+.amenitylist{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.amenityitem{
+    padding:12px 22px;
+    background:#FFFFFF;
+    border:1px solid #D4AF37;
+    border-radius:50px;
+    color:#2E5E3E;
+    font-weight:600;
+}
+
+/* HOTEL TIPS */
+.hoteltips{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto 60px;
+    text-align:center;
+}
+
+.hoteltips h2{
+    font-size:36px;
+    color:#2E5E3E;
+}
+
+.hoteltips h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+}
+
+.hoteltips p{
+    margin-top:15px;
+    font-size:17px;
+    line-height:1.9;
+}
+
+/* HOTEL MAP */
+.hotelmap{
+    width:90%;
+    max-width:1100px;
+    margin:20px auto 70px;
+    background:#FAF7EF;
+    border:1px solid #E7D9B0;
+    border-radius:50px;
+    padding:25px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+}
+
+.hotelmap iframe{
+    width:100%;
+    height:300px;
+    border:none;
+    border-radius:30px;
+}
+
+/* GUIDE PAGE */
+.guideintro{
+    width:90%;
+    max-width:950px;
+    margin:20px auto 10px;
+    text-align:center;
+}
+
+.guideintro h2{
+    font-size:38px;
+    color:#2E5E3E;
+}
+
+.guideintro h2::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+    border-radius:20px;
+}
+
+.guideintro p{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+    margin-top:15px;
+}
+
+.guidesection{
+    width:90%;
+    margin:50px auto;
+}
+
+.guidebox{
+    background:#FAF7EF;
+    border:1px solid #E7D9B0;
+    border-radius:50px;
+    padding:30px 35px;
+    margin-bottom:40px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.guidebox:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 26px rgba(0,0,0,0.12);
+}
+
+.guideitem{
+    display:flex;
+    gap:40px;
+}
+
+.guideimg{
+    width:50%;
+}
+
+.guideimg img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:50px;
+}
+
+.guidetext{
+    width:50%;
+}
+
+.guidetext h3{
+    font-size:40px;
+    color:#A66B1F;
+}
+
+.guidetext h3::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#2C7BE5;
+    margin-top:8px;
+}
+
+.guidetext p{
+    margin:15px 0;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.guidetext ul{
+    list-style:none;
+    margin-top:10px;
+}
+
+.guidetext ul li{
+    margin-bottom:10px;
+    font-size:16px;
+    color:#2E5E3E;
+}
+
+/* TRANSPORT */
+.transporttips{
+    text-align:center;
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.transporttips h2{
+    color:#2E5E3E;
+    font-size:32px;
+}
+
+.transporttips h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+    border-radius:20px;
+}
+
+.transporttips p{
+    margin-top:10px;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.transportguideinfo{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto 60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+.transportcard{
+    background:#FFFFFF;
+    border-radius:50px;
+    padding:30px 25px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+    border:1px solid #E7D9B0;
+}
+
+.transportcard h3{
+    font-size:24px;
+    color:#2E5E3E;
+}
+
+.transportcard h3::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    background:#2C7BE5;
+    margin:10px auto 0;
+}
+
+.transportcard p{
+    margin-top:14px;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* FOOTER */
+footer{
+    background:#1F4D2E;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    border-top:3px solid #D4AF37;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px){
+    .navbar{
+        padding:18px 25px;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo{
+        transform:scale(1);
+    }
+
+    .navlinks{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .pagetitle h1{
+        font-size:42px;
+    }
+
+    .about h2,
+    .intro h2,
+    .hotelintro h2,
+    .guideintro h2,
+    .amenities h2,
+    .hoteltips h2{
+        font-size:32px;
+    }
+
+    .zigzagitem,
+    .guideitem,
+    .reverse{
+        flex-direction:column;
+    }
+
+    .zigzagimg,
+    .zigzagtext,
+    .guideimg,
+    .guidetext{
+        width:100%;
+    }
+
+    .zigzagimg img,
+    .guideimg img{
+        height:320px;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding:15px 20px;
+    }
+
+    .navlinks{
+        gap:12px;
+    }
+
+    .navlinks a{
+        font-size:14px;
+    }
+
+    .menu{
+        position:static;
+        display:none;
+        width:100%;
+        margin-top:8px;
+        box-shadow:none;
+        border-radius:16px;
+    }
+
+    .dropdown:hover .menu{
+        display:block;
+    }
+
+    .pagetitle{
+        margin:40px auto;
+    }
+
+    .pagetitle h1{
+        font-size:34px;
+    }
+
+    .pagetitle p,
+    .about p,
+    .intro p,
+    .hotelintro p,
+    .guideintro p,
+    .act p,
+    .tip p,
+    .hoteltips p,
+    .transporttips p{
+        font-size:16px;
+    }
+
+    .about h2{
+        font-size:30px;
+    }
+
+    .zigzagbox,
+    .guidebox,
+    .featurebox,
+    .hotelmap,
+    .restaurantcard,
+    .hotelcard,
+    .transportcard{
+        border-radius:30px;
+        padding:20px;
+    }
+
+    .zigzagimg img,
+    .guideimg img{
+        height:250px;
+        border-radius:30px;
+    }
+
+    .restaurantsection,
+    .hotelsection,
+    .hotelfeatures,
+    .transportguideinfo{
+        grid-template-columns:1fr;
+    }
+
+    .cardimg,
+    .hotelimg{
+        height:220px;
+    }
+
+    .cardtext h3,
+    .hoteltext h3{
+        font-size:24px;
+    }
+
+    .zigzagtext h3,
+    .guidetext h3{
+        font-size:28px;
+    }
+
+    .beachmap iframe,
+    .hotelmap iframe{
+        height:220px;
+        border-radius:20px;
+    }
+
+    .amenitylist,
+    .hotelcategories,
+    .categories{
+        gap:10px;
+    }
+
+    .catbtn,
+    .hotelbtn,
+    .amenityitem{
+        font-size:14px;
+        padding:10px 18px;
+    }
+}
+
+@media (max-width: 480px){
+    .navbar{
+        padding:12px 15px;
+    }
+
+    .circle{
+        width:55px;
+        height:55px;
+    }
+
+    .logo h2{
+        font-size:18px;
+    }
+
+    .navlinks{
+        gap:10px;
+    }
+
+    .navlinks a{
+        font-size:13px;
+    }
+
+    .pagetitle h1{
+        font-size:28px;
+    }
+
+    .about h2,
+    .intro h2,
+    .hotelintro h2,
+    .guideintro h2,
+    .amenities h2,
+    .hoteltips h2,
+    .act h2,
+    .tip h2,
+    .transporttips h2{
+        font-size:24px;
+    }
+
+    .zigzagbox,
+    .guidebox,
+    .featurebox,
+    .hotelmap,
+    .restaurantcard,
+    .hotelcard,
+    .transportcard{
+        border-radius:22px;
+    }
+
+    .zigzagimg img,
+    .guideimg img,
+    .cardimg,
+    .hotelimg{
+        height:200px;
+    }
+
+    .cardtext,
+    .hoteltext{
+        padding:18px;
+    }
+
+    .cardtext h3,
+    .hoteltext h3,
+    .zigzagtext h3,
+    .guidetext h3{
+        font-size:22px;
+    }
+
+    .beachmap iframe,
+    .hotelmap iframe{
+        height:200px;
+    }
+}
