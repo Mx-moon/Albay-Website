@@ -1,200 +1,261 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Albay | Spots</title>
-    <link rel="icon" type="Image/png" href="img/icon.png">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
     <link rel="stylesheet" href="css/sub.css">
 </head>
+
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <div class="circle">
-                <img src="img/icon.png" alt="Discover Albay Logo">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
+                </div>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
+
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="spots-toggle" class="nav-section-toggle">
+                        <label for="spots-toggle" class="nav-link nav-parent-toggle active">Spots</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link active" href="spots.html" aria-current="page">Spots</a></li>
+                            <li><a class="dropdown-item" href="beaches.html">Beaches</a></li>
+                            <li><a class="dropdown-item" href="mountains.html">Mountains</a></li>
+                            <li><a class="dropdown-item" href="lakes.html">Lakes</a></li>
+                            <li><a class="dropdown-item" href="cities.html">Cities</a></li>
+                            <li><a class="dropdown-item" href="historical.html">Historical</a></li>
+                            <li><a class="dropdown-item" href="cultural.html">Cultural</a></li>
+                            <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">Guides</a>
+                    </li>
+                </ul>
             </div>
-            <h2>Discover <span>Albay</span></h2>
         </div>
+    </nav>
 
-        <ul class="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="spots.html">Spots ▾</a>
-                <div class="menu">
-                    <a href="beaches.html">Beaches</a>
-                    <a href="mountains.html">Mountains</a>
-                    <a href="lakes.html">Lakes</a>
-                    <a href="cities.html">Cities</a>
-                    <a href="historical.html">Historical</a>
-                    <a href="cultural.html">Cultural</a>
-                    <a href="parks.html">Parks</a>
-                    <a href="adventure.html">Adventure</a>
-                </div>
-            </li>
-            <li><a href="restaurants.html">Restaurants</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="guides.html">Guides</a></li>
-        </ul>
-    </header>
 
-    <section class="banner">
-        <div class="bannercontent">
-            <h1>Explore <span>Spots<span></h1>
-            <p>Find different tourist spot categories around Albay.</p>
+<section class="banner">
+    <div class="bannercontent">
+        <h1>Explore <span>Spots</span></h1>
+        <p>Find different tourist spot categories around Albay.</p>
+    </div>
+</section>
+
+
+<section class="sect">
+    <div class="container-custom">
+        <p>
+            Albay is known for its beautiful tourist spots, from relaxing beaches and peaceful lakes
+            to scenic mountains and cultural landmarks. Explore and enjoy nature, adventure, and history.
+        </p>
+    </div>
+</section>
+
+
+<section class="spots-grid-section">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="beaches.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/sabang.jpg" class="card-img-top" alt="Beaches">
+                        <div class="card-body">
+                            <h5 class="card-title">Beaches</h5>
+                            <p class="card-text">Relaxing beach destinations and seaside views.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="mountains.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/mayon.jpg" class="card-img-top" alt="Mountains">
+                        <div class="card-body">
+                            <h5 class="card-title">Mountains</h5>
+                            <p class="card-text">Mountain views and hiking adventures.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="lakes.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/lakedanao.jpg" class="card-img-top" alt="Lakes">
+                        <div class="card-body">
+                            <h5 class="card-title">Lakes</h5>
+                            <p class="card-text">Peaceful lakes and calm nature spots.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="cities.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/legazpi.jpg" class="card-img-top" alt="Cities">
+                        <div class="card-body">
+                            <h5 class="card-title">Cities</h5>
+                            <p class="card-text">Cities with culture and attractions.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="historical.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/cagsawa.webp" class="card-img-top" alt="Historical">
+                        <div class="card-body">
+                            <h5 class="card-title">Historical</h5>
+                            <p class="card-text">Important heritage landmarks.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="cultural.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/museums.jpg" class="card-img-top" alt="Cultural">
+                        <div class="card-body">
+                            <h5 class="card-title">Cultural</h5>
+                            <p class="card-text">Culture and traditions of Albay.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="parks.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/ecopark.jpg" class="card-img-top" alt="Parks">
+                        <div class="card-body">
+                            <h5 class="card-title">Parks</h5>
+                            <p class="card-text">Outdoor parks and relaxation areas.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <a href="adventure.html" class="text-decoration-none">
+                    <div class="card spot-card h-100">
+                        <img src="img/adventure1.jpg" class="card-img-top" alt="Adventure">
+                        <div class="card-body">
+                            <h5 class="card-title">Adventure</h5>
+                            <p class="card-text">Exciting outdoor activities.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="sect">
-            <p>
-                 Albay is known for its beautiful tourist spots, from relaxing beaches and peaceful lakes to scenic mountains and cultural landmarks. Each place offers a unique experience for visitors, whether you want adventure, nature, or history. Explore the different categories below to discover what Albay has to offer.
-            </p>
-    </section>
-        <div class="grid">
-            <a class="card" href="beaches.html">
-                <img src="img/sabang.jpg" alt="Beaches">
-                <div class="card-text">
-                    <h3>Beaches</h3>
-                    <p>Relaxing beach destinations and seaside views.</p>
-                </div>
-            </a>
 
-            <a class="card" href="mountains.html">
-                <img src="img/mayon.jpg" alt="Mountains">
-                <div class="card-text">
-                    <h3>Mountains</h3>
-                    <p>Mountain views, hiking, and scenic high places.</p>
-                </div>
-            </a>
-
-            <a class="card" href="lakes.html">
-                <img src="img/lakedanao.jpg" alt="Lakes">
-                <div class="card-text">
-                    <h3>Lakes</h3>
-                    <p>Peaceful lakes and calm nature attractions.</p>
-                </div>
-            </a>
-
-            <a class="card" href="cities.html">
-                <img src="img/legazpi.jpg" alt="Cities">
-                <div class="card-text">
-                    <h3>Cities</h3>
-                    <p>Main cities and towns in Albay with attractions and culture.</p>
-                </div>
-            </a>
-
-            <a class="card" href="historical.html">
-                <img src="img/cagsawa.webp" alt="Historical">
-                <div class="card-text">
-                    <h3>Historical</h3>
-                    <p>Important heritage sites and landmarks in the province.</p>
-                </div>
-            </a>
-
-            <a class="card" href="cultural.html">
-                <img src="img/museums.jpg" alt="Cultural">
-                <div class="card-text">
-                    <h3>Cultural</h3>
-                    <p>Culture, traditions, festivals, and local identity.</p>
-                </div>
-            </a>
-
-            <a class="card" href="parks.html">
-                <img src="img/ecopark.jpg" alt="Parks">
-                <div class="card-text">
-                    <h3>Parks</h3>
-                    <p>Public parks and family-friendly outdoor spaces.</p>
-                </div>
-            </a>
-
-            <a class="card" href="adventure.html">
-                <img src="img/adventure1.jpg" alt="Adventure">
-                <div class="card-text">
-                    <h3>Adventure</h3>
-                    <p>Exciting experiences for travelers who want activities.</p>
-                </div>
-            </a>
-        </div>
-
-    <section class="visit">
+<section class="visit">
+    <div class="container-custom">
         <h2>Why Visit Albay</h2>
-        <p>
-            Albay is a great destination for travelers who want to experience nature, culture, and adventure all in one place. It offers beautiful scenery and unique local experiences.
-        </p>
+        <p class="visit-intro">Albay offers nature, culture, and adventure all in one place.</p>
 
         <div class="info-list">
             <div class="info-item">
-                <h3> Beautiful Nature </h3>
-                <p>
-                    See the perfect cone of Mayon Volcano and enjoy beaches, hills, and relaxing natural views across the province.
-                </p>
+                <h3>Beautiful Nature</h3>
+                <p>Enjoy Mayon Volcano and scenic landscapes.</p>
             </div>
 
             <div class="info-item">
-                <h3> Rich Culture </h3>
-                <p>
-                    Discover local traditions, colorful festivals, and the everyday lifestyle of the people in Albay.
-                </p>
+                <h3>Rich Culture</h3>
+                <p>Experience traditions and festivals.</p>
             </div>
 
             <div class="info-item">
-                <h3> Adventure </h3>
-                <p>
-                    Experience exciting activities like hiking, ATV rides near Mayon, and exploring different outdoor spots.
-                </p>
+                <h3>Adventure</h3>
+                <p>Try hiking and outdoor activities.</p>
             </div>
 
             <div class="info-item">
-                <h3> Local Food </h3>
-                <p>
-                    Try famous Bicol dishes like Bicol Express and other spicy and flavorful local specialties.
-                </p>
+                <h3>Local Food</h3>
+                <p>Taste Bicol specialties.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="visit">
+
+<section class="visit">
+    <div class="container-custom">
         <h2>Best Time to Visit</h2>
-        <p>
-            The best time to visit Albay depends on your preferred activities, but weather plays an important role in your travel experience.
-        </p>
 
         <div class="info-list">
             <div class="info-item">
-                <h3> Dry Season </h3>
-                <p>
-                    From March to May, the weather is sunny and perfect for sightseeing, outdoor adventures, and photography.
-                </p>
+                <h3>Dry Season</h3>
+                <p>Perfect for travel and outdoor activities.</p>
             </div>
 
             <div class="info-item">
-                <h3> Rainy Season </h3>
-                <p>
-                    From June to October, expect cooler weather and fewer tourists, but there may be frequent rain showers.
-                </p>
+                <h3>Rainy Season</h3>
+                <p>Cool weather but more rain.</p>
             </div>
 
             <div class="info-item">
-                <h3> Festival Time </h3>
-                <p>
-                    Visit during events like Daragang Magayon Festival to experience culture, parades, and local celebrations.
-                </p>
+                <h3>Festival Time</h3>
+                <p>Enjoy local celebrations.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="page-nav">
-        <a href="index.html" class="nav-btn">← Prev</a>
-        <a href="restaurants.html" class="nav-btn">Next →</a>
-    </section>
 
-    <footer id="footer">
-        <div class="footercontent">
-            <h2>Discover Albay</h2>
-            <p>A simple tourism website for Albay.</p>
-            <p>Email: xanderlauron543@gmail.com</p>
-        </div>
-    </footer>
+<footer>
+    <h2>Discover Albay</h2>
+    <p>A simple tourism website</p>
+</footer>
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+

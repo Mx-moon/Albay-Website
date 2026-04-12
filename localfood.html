@@ -1,41 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Food | Discover Albay</title>
     <link rel="icon" type="image/png" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="logo">
-            <div class="circle">
-                <img src="img/icon.png">
-            </div>
-            <h2>Discover <span>Albay</span></h2>
-        </div>
-
-        <ul class="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spots.html">Spots</a></li>
-
-            <li class="dropdown">
-                <a href="restaurants.html">Restaurants ▾</a>
-                <div class="menu">
-                    <a href="localfood.html">Local Food</a>
-                    <a href="cafes.html">Cafes</a>
-                    <a href="seafood.html">Seafood</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
                 </div>
-            </li>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
 
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="guides.html">Guides</a></li>
-        </ul>
-    </header>
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <section class="pagetitle">
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spots.html">Spots</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="restaurants-toggle" class="nav-section-toggle">
+                        <label for="restaurants-toggle" class="nav-link nav-parent-toggle active">Restaurants</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link" href="restaurants.html">Restaurants</a></li>
+                            <li><a class="dropdown-item active" href="localfood.html" aria-current="page">Local Food</a></li>
+                            <li><a class="dropdown-item" href="cafes.html">Cafes</a></li>
+                            <li><a class="dropdown-item" href="seafood.html">Seafood</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">Guides</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="pagetitle">
         <h1>Local Food in Albay</h1>
         <p>
             Explore the rich flavors of Albay through traditional Bicol dishes,
@@ -62,13 +81,13 @@
         <a href="seafood.html" class="catbtn">Seafood</a>
     </section>
 
-    <section class="restaurantsection">
-        <div class="restaurantcard">
-            <div class="cardimg">
-                <img src="img/colonial.jpg" alt="1st Colonial Grill">
-            </div>
-            <div class="cardtext">
-                <h3>1st Colonial Grill</h3>
+        <section class="detail-card-list">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/colonial.jpg" alt="1st Colonial Grill">
+                <div class="card-body detail-card-body">
+                    <h3>1st Colonial Grill</h3>
                 <p>
                     One of the most popular local food restaurants in Albay, known for serving
                     authentic Bicol dishes and their famous sili ice cream.
@@ -78,15 +97,20 @@
                     <li><strong>Specialty:</strong> Bicol Express, Laing, Sili Ice Cream</li>
                     <li><strong>Price Range:</strong> ₱300 - ₱600</li>
                 </ul>
+                <p><strong>Best For:</strong> Visitors who want to try classic Bicol flavors in one of the best-known local restaurants in Legazpi.</p>
+                <p class="detail-note">How to Find: Search "1st Colonial Grill Legazpi City Albay" on Google Maps or ask for directions in the city proper.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=1st%20Colonial%20Grill%20Legazpi%20City%20Albay" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
 
-        <div class="restaurantcard">
-            <div class="cardimg">
-                <img src="img/cafe.jpg" alt="Small Talk Café">
-            </div>
-            <div class="cardtext">
-                <h3>Small Talk Café</h3>
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/cafe.jpg" alt="Small Talk Café">
+                <div class="card-body detail-card-body">
+                    <h3>Small Talk Café</h3>
                 <p>
                     A favorite dining place in Albay that offers a mix of local flavors,
                     comfort food, and a cozy atmosphere for visitors.
@@ -96,15 +120,20 @@
                     <li><strong>Specialty:</strong> Pasta, rice meals, local-inspired dishes</li>
                     <li><strong>Price Range:</strong> ₱200 - ₱500</li>
                 </ul>
+                <p><strong>Best For:</strong> Travelers who want a cozy restaurant with comfort food and familiar local favorites after sightseeing.</p>
+                <p class="detail-note">How to Find: Search "Small Talk Cafe Legazpi City Albay" on Google Maps or ask drivers near the city center.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Small%20Talk%20Cafe%20Legazpi%20City%20Albay" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
 
-        <div class="restaurantcard">
-            <div class="cardimg">
-                <img src="img/casasoriano.jpg" alt="Casa Soriano">
-            </div>
-            <div class="cardtext">
-                <h3>Casa Soriano</h3>
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/casasoriano.jpg" alt="Casa Soriano">
+                <div class="card-body detail-card-body">
+                    <h3>Casa Soriano</h3>
                 <p>
                     A nice place to enjoy Filipino meals and local dishes in a warm
                     and comfortable setting.
@@ -114,15 +143,20 @@
                     <li><strong>Specialty:</strong> Filipino dishes and local meals</li>
                     <li><strong>Price Range:</strong> ₱2000 - ₱3000</li>
                 </ul>
+                <p><strong>Best For:</strong> Family meals, casual celebrations, and visitors who want a fuller sit-down dining experience.</p>
+                <p class="detail-note">How to Find: Search "Casa Soriano Legazpi City Albay" on Google Maps or ask nearby establishments in Legazpi.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Casa%20Soriano%20Legazpi%20City%20Albay" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
 
-        <div class="restaurantcard">
-            <div class="cardimg">
-                <img src="img/local4.jpg" alt="Bicolano Food House">
-            </div>
-            <div class="cardtext">
-                <h3>Bicolano Food House</h3>
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/local4.jpg" alt="Bicolano Food House">
+                <div class="card-body detail-card-body">
+                    <h3>Bicolano Food House</h3>
                 <p>
                     A simple local dining spot where visitors can enjoy classic Bicol dishes
                     and traditional home-style meals.
@@ -132,15 +166,20 @@
                     <li><strong>Specialty:</strong> Pinangat, Bicol Express, local viands</li>
                     <li><strong>Price Range:</strong> ₱150 - ₱400</li>
                 </ul>
+                <p><strong>Best For:</strong> Visitors who want affordable local dishes while exploring Tabaco City and nearby attractions.</p>
+                <p class="detail-note">How to Find: Search "Bicolano Food House Tabaco City Albay" on Google Maps or ask for local food spots near the city center.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Bicolano%20Food%20House%20Tabaco%20City%20Albay" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
 
-        <div class="restaurantcard">
-            <div class="cardimg">
-                <img src="img/local5.png" alt="Traditional Eatery">
-            </div>
-            <div class="cardtext">
-                <h3>Traditional Eatery</h3>
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/local5.png" alt="Traditional Eatery">
+                <div class="card-body detail-card-body">
+                    <h3>Traditional Eatery</h3>
                 <p>
                     A budget-friendly place where tourists can try local dishes and experience
                     the everyday flavors of Albay.
@@ -150,15 +189,20 @@
                     <li><strong>Specialty:</strong> Affordable local meals</li>
                     <li><strong>Price Range:</strong> ₱20 - ₱100</li>
                 </ul>
+                <p><strong>Best For:</strong> Budget-conscious travelers who want simple daily meals and easy-to-find Filipino dishes.</p>
+                <p class="detail-note">How to Find: Search for local eateries in Ligao City on Google Maps or ask tricycle drivers for popular budget food stops.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Ligao%20City%20Albay%20local%20eatery" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
 
-        <div class="restaurantcard">
-            <div class="cardimg">
-                <img src="img/local6.jpg" alt="Local Delicacies Corner">
-            </div>
-            <div class="cardtext">
-                <h3>Local Delicacies Corner</h3>
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/local6.jpg" alt="Local Delicacies Corner">
+                <div class="card-body detail-card-body">
+                    <h3>Local Delicacies Corner</h3>
                 <p>
                     A good stop for visitors who want to taste traditional delicacies and
                     discover more of Albay’s food culture.
@@ -168,8 +212,43 @@
                     <li><strong>Specialty:</strong> Native delicacies and snacks</li>
                     <li><strong>Price Range:</strong> ₱10 - ₱100</li>
                 </ul>
+                <p><strong>Best For:</strong> Buying quick local pasalubong, native snacks, and delicacies before heading to other tourist spots.</p>
+                <p class="detail-note">How to Find: Search for delicacy shops in Daraga on Google Maps or ask hotel staff for popular pasalubong areas.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Daraga%20Albay%20local%20delicacies" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
+        </div>
+    </section>
+
+    <section class="act">
+        <h2>How to Find Local Food Places</h2>
+        <p>
+            Many of the best-known local food restaurants in Albay can be found in Legazpi City and
+            Daraga, especially near busy roads, city centers, transport terminals, and commercial areas.
+            Smaller but well-loved food spots can also be found in Tabaco, Ligao, and nearby towns, where
+            visitors often discover affordable meals and authentic home-style dishes. Before going out, it
+            is helpful to search the restaurant name on Google Maps, check how far it is from your hotel,
+            and look at nearby landmarks so the place is easier to find. You can also ask hotel staff,
+            tricycle drivers, market vendors, or local residents for recommendations because they usually
+            know which food places are popular, affordable, and worth trying.
+        </p>
+    </section>
+
+    <section class="tip">
+        <h2>Dining Tips</h2>
+        <p>
+            If you are trying local food for the first time, ask the staff which dishes are the house
+            specialties and whether they are spicy, because many Bicol dishes use chili, coconut milk,
+            and rich seasonings. It is also a good idea to bring cash since some smaller eateries may not
+            accept digital payments. Visit a little earlier than regular lunch or dinner time if you want
+            to avoid long waits, especially in popular restaurants. If you are eating with friends or
+            family, sharing different dishes is a good way to taste more local flavors in one meal. You
+            can also ask if there are native snacks or delicacies available so you can enjoy more of
+            Albay's food culture during your visit.
+        </p>
     </section>
 
     <footer id="footer">
@@ -179,6 +258,13 @@
             <p>Email: xanderlauron543@gmail.com</p>
         </div>
     </footer>
-
 </body>
 </html>
+
+
+
+
+
+
+
+

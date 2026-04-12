@@ -1,40 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tourism | Safety Guide</title>
     <link rel="icon" type="image/png" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="logo">
-            <div class="circle">
-                <img src="img/icon.png">
-            </div>
-            <h2>Discover <span>Albay</span></h2>
-        </div>
-
-        <ul class="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spots.html">Spots</a></li>
-            <li><a href="restaurants.html">Restaurants</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-
-            <li class="dropdown">
-                <a href="guides.html">Guides ▾</a>
-                <div class="menu">
-                    <a href="transportation.html">Transportation</a>
-                    <a href="tips.html">Travel Tips</a>
-                    <a href="safety.html">Safety Guide</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
                 </div>
-            </li>
-        </ul>
-    </header>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
 
-    <section class="pagetitle">
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spots.html">Spots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="guides-toggle" class="nav-section-toggle">
+                        <label for="guides-toggle" class="nav-link nav-parent-toggle active">Guides</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link" href="guides.html">Guides</a></li>
+                            <li><a class="dropdown-item" href="transportation.html">Transportation</a></li>
+                            <li><a class="dropdown-item" href="tips.html">Travel Tips</a></li>
+                            <li><a class="dropdown-item active" href="safety.html" aria-current="page">Safety Guide</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="pagetitle">
         <h1>Safety Guide in Albay</h1>
         <p>
             Stay safe while exploring Albay by following important travel safety
@@ -59,14 +79,12 @@
         </p>
     </section>
 
-    <section class="guidesection">
-
-        <div class="guidebox">
-            <div class="guideitem">
-                <div class="guideimg">
-                    <img src="img/safe.webp" alt="Keep Your Belongings Safe">
-                </div>
-                <div class="guidetext">
+        <section class="detail-card-list">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/safe.webp" alt="Keep Your Belongings Safe">
+                <div class="card-body detail-card-body">
                     <h3>Keep Your Belongings Safe</h3>
                     <p>
                         Always keep your personal items such as wallet, phone,
@@ -82,12 +100,10 @@
             </div>
         </div>
 
-        <div class="guidebox">
-            <div class="guideitem reverse">
-                <div class="guideimg">
-                    <img src="img/weather.webp" alt="Be Aware of Weather Conditions">
-                </div>
-                <div class="guidetext">
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/weather.webp" alt="Be Aware of Weather Conditions">
+                <div class="card-body detail-card-body">
                     <h3>Be Aware of Weather Conditions</h3>
                     <p>
                         Albay is known for its natural attractions, but weather
@@ -103,12 +119,10 @@
             </div>
         </div>
 
-        <div class="guidebox">
-            <div class="guideitem">
-                <div class="guideimg">
-                    <img src="img/rules.jpg" alt="Follow Local Rules">
-                </div>
-                <div class="guidetext">
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/rules.jpg" alt="Follow Local Rules">
+                <div class="card-body detail-card-body">
                     <h3>Follow Local Rules and Guidelines</h3>
                     <p>
                         Respect local regulations in tourist areas. Follow safety
@@ -124,12 +138,10 @@
             </div>
         </div>
 
-        <div class="guidebox">
-            <div class="guideitem reverse">
-                <div class="guideimg">
-                    <img src="img/health.jpg" alt="Take Care of Your Health">
-                </div>
-                <div class="guidetext">
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/health.jpg" alt="Take Care of Your Health">
+                <div class="card-body detail-card-body">
                     <h3>Take Care of Your Health</h3>
                     <p>
                         Bring necessary medicines, stay hydrated, and rest when
@@ -144,7 +156,7 @@
                 </div>
             </div>
         </div>
-
+        </div>
     </section>
 
     <section class="transporttips">
@@ -192,6 +204,13 @@
             <p>Email: xanderlauron543@gmail.com</p>
         </div>
     </footer>
-
 </body>
 </html>
+
+
+
+
+
+
+
+

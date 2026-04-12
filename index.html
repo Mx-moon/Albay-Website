@@ -1,37 +1,119 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Albay | Home</title>
-    <link rel="icon" type="Image/png" href="img/icon.png">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-            <div class="circle">
-                <img src="img/icon.png" alt="Discover Albay Logo">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
+                </div>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
+
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="spots-toggle" class="nav-section-toggle">
+                        <label for="spots-toggle" class="nav-link nav-parent-toggle">Spots</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link" href="spots.html">Spots</a></li>
+                            <li><a class="dropdown-item" href="beaches.html">Beaches</a></li>
+                            <li><a class="dropdown-item" href="mountains.html">Mountains</a></li>
+                            <li><a class="dropdown-item" href="lakes.html">Lakes</a></li>
+                            <li><a class="dropdown-item" href="cities.html">Cities</a></li>
+                            <li><a class="dropdown-item" href="historical.html">Historical</a></li>
+                            <li><a class="dropdown-item" href="cultural.html">Cultural</a></li>
+                            <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">Guides</a>
+                    </li>
+                </ul>
             </div>
-            <h2>Discover <span>Albay</span></h2>
         </div>
+    </nav>
 
-        <ul class="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spots.html">Spots</a></li>
-            <li><a href="restaurants.html">Restaurants</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="guides.html">Guides</a></li>
-        </ul>
-    </header>
+    <section class="hero-carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
-    <section class="textbg">
-        <div class="overlay"></div>
-        <div class="text">
-            <div class="line"></div>
-            <h1>Discover <span>Albay</span></h1>
-            <p>Heart of Bicol. Soul of Adventure.</p>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/background.jpg" class="d-block w-100" alt="Discover Albay">
+                    <div class="carousel-caption custom-caption">
+                        <div class="line"></div>
+                        <h1>Discover <span>Albay</span></h1>
+                        <p>Heart of Bicol. Soul of Adventure.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/spot1.jpg" class="d-block w-100" alt="Mayon Volcano">
+                    <div class="carousel-caption custom-caption">
+                        <div class="line"></div>
+                        <h1>Experience <span>Mayon Volcano</span></h1>
+                        <p>Famous for its perfect cone shape and breathtaking views.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/spot3.jpg" class="d-block w-100" alt="Sumlang Lake">
+                    <div class="carousel-caption custom-caption">
+                        <div class="line"></div>
+                        <h1>Relax at <span>Sumlang Lake</span></h1>
+                        <p>Enjoy peaceful scenery and a beautiful reflection of Mayon.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
         </div>
     </section>
 
@@ -40,11 +122,13 @@
             <h2>Top Cities in Albay</h2>
             <p>Explore the most popular cities and municipalities in Albay</p>
         </div>
+
         <div class="top">
-            <div class="attraction">
-                <img src="img/legazpi.jpg" alt="Legazpi City">
-                <div class="attraction-overlay">
-                    <span class="tag">TOP CITY</span>
+
+            <div class="card text-white">
+                <img src="img/legazpi.jpg" class="card-img" alt="Legazpi City">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="tag mb-2">TOP CITY</span>
                     <h3>Legazpi City</h3>
                     <p class="location">Albay</p>
                     <p>
@@ -53,10 +137,11 @@
                     </p>
                 </div>
             </div>
-            <div class="attraction">
-                <img src="img/daraga.jpg" alt="Daraga">
-                <div class="attraction-overlay">
-                    <span class="tag">TOP CITY</span>
+
+            <div class="card text-white">
+                <img src="img/daraga.jpg" class="card-img" alt="Daraga">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="tag mb-2">TOP CITY</span>
                     <h3>Daraga</h3>
                     <p class="location">Albay</p>
                     <p>
@@ -65,10 +150,11 @@
                     </p>
                 </div>
             </div>
-            <div class="attraction">
-                <img src="img/ligao.jpg" alt="Ligao City">
-                <div class="attraction-overlay">
-                    <span class="tag">TOP CITY</span>
+
+            <div class="card text-white">
+                <img src="img/ligao.jpg" class="card-img" alt="Ligao City">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="tag mb-2">TOP CITY</span>
                     <h3>Ligao City</h3>
                     <p class="location">Albay</p>
                     <p>
@@ -77,10 +163,11 @@
                     </p>
                 </div>
             </div>
-            <div class="attraction">
-                <img src="img/tabaco.jpg" alt="Tabaco City">
-                <div class="attraction-overlay">
-                    <span class="tag">TOP CITY</span>
+
+            <div class="card text-white">
+                <img src="img/tabaco.jpg" class="card-img" alt="Tabaco City">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="tag mb-2">TOP CITY</span>
                     <h3>Tabaco City</h3>
                     <p class="location">Albay</p>
                     <p>
@@ -89,19 +176,19 @@
                     </p>
                 </div>
             </div>
+
             <div class="attraction-text">
                 <p>
                     Albay is home to several cities and towns that offer a mix of
                     culture, history, and natural beauty.
                 </p>
                 <hr>
-                    <p>
-                        From busy urban centers to peaceful areas, each place gives
-                        visitors a unique experience in the province.
-                    </p>
+                <p>
+                    From busy urban centers to peaceful areas, each place gives
+                    visitors a unique experience in the province.
+                </p>
                 <hr>
             </div>
-
         </div>
     </section>
 
@@ -111,52 +198,72 @@
                 <h2>Attraction Spots</h2>
             </div>
         </div>
-        <div class="grid">
-            <div class="card">
-                <img src="img/spot1.jpg" alt="Mayon Volcano">
-                <div class="cardtext">
-                    <h3>Mayon Volcano</h3>
-                    <p>Famous volcano with a perfect cone shape.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/spot2.jpg" alt="Cagsawa Ruins">
-                <div class="cardtext">
-                    <h3>Cagsawa Ruins</h3>
-                    <p>Historic church ruins buried by eruption.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/spot3.jpg" alt="Sumlang Lake">
-                <div class="cardtext">
-                    <h3>Sumlang Lake</h3>
-                    <p>Peaceful lake with Mayon reflection.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/spot4.jpg" alt="Lignon Hill">
-                <div class="cardtext">
-                    <h3>Lignon Hill</h3>
-                    <p>Hill with panoramic Mayon view.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/spot5.jpg" alt="Daraga Church">
-                <div class="cardtext">
-                    <h3>Daraga Church</h3>
-                    <p>Old church with scenic Mayon view.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/spot6.jpg" alt="Daraga Church">
-                <div class="cardtext">
-                    <h3>Mayon Skyline View Deck</h3>
-                    <p>A high place near the volcano where you can enjoy cool air and scenic views.</p>
-                </div>
-            </div>
 
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/spot1.jpg" class="card-img-top" alt="Mayon Volcano">
+                        <div class="card-body">
+                            <h5 class="card-title">Mayon Volcano</h5>
+                            <p class="card-text">Famous volcano with a perfect cone shape.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/spot2.jpg" class="card-img-top" alt="Cagsawa Ruins">
+                        <div class="card-body">
+                            <h5 class="card-title">Cagsawa Ruins</h5>
+                            <p class="card-text">Historic church ruins buried by eruption.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/spot3.jpg" class="card-img-top" alt="Sumlang Lake">
+                        <div class="card-body">
+                            <h5 class="card-title">Sumlang Lake</h5>
+                            <p class="card-text">Peaceful lake with Mayon reflection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/spot4.jpg" class="card-img-top" alt="Lignon Hill">
+                        <div class="card-body">
+                            <h5 class="card-title">Lignon Hill</h5>
+                            <p class="card-text">Hill with panoramic Mayon view.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/spot5.jpg" class="card-img-top" alt="Daraga Church">
+                        <div class="card-body">
+                            <h5 class="card-title">Daraga Church</h5>
+                            <p class="card-text">Old church with scenic Mayon view.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/spot6.jpg" class="card-img-top" alt="Mayon Skyline">
+                        <div class="card-body">
+                            <h5 class="card-title">Mayon Skyline View Deck</h5>
+                            <p class="card-text">Enjoy cool air and scenic views near the volcano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <section class="categories" id="categories">
         <div class="sectiontitle">
             <h2>Explore Categories</h2>
@@ -188,6 +295,10 @@
             <p>Email: xanderlauron543@gmail.com</p>
         </div>
     </footer>
-
 </body>
 </html>
+
+
+
+
+

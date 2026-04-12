@@ -1,42 +1,63 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tourism | Cities</title>
     <link rel="icon" type="image/png" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
+                </div>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
 
-<header class="navbar">
-    <div class="logo">
-        <div class="circle">
-            <img src="img/icon.png" alt="Discover Albay Logo">
-        </div>
-        <h2>Discover <span>Albay</span></h2>
-    </div>
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <ul class="navlinks">
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="spots.html">Spots ▾</a>
-            <div class="menu">
-                <a href="beaches.html">Beaches</a>
-                <a href="mountains.html">Mountains</a>
-                <a href="lakes.html">Lakes</a>
-                <a href="cities.html">Cities</a>
-                <a href="historical.html">Historical</a>
-                <a href="cultural.html">Cultural</a>
-                <a href="parks.html">Parks</a>
-                <a href="adventure.html">Adventure</a>
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="spots-toggle" class="nav-section-toggle">
+                        <label for="spots-toggle" class="nav-link nav-parent-toggle active">Spots</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link" href="spots.html">Spots</a></li>
+                            <li><a class="dropdown-item" href="beaches.html">Beaches</a></li>
+                            <li><a class="dropdown-item" href="mountains.html">Mountains</a></li>
+                            <li><a class="dropdown-item" href="lakes.html">Lakes</a></li>
+                            <li><a class="dropdown-item active" href="cities.html" aria-current="page">Cities</a></li>
+                            <li><a class="dropdown-item" href="historical.html">Historical</a></li>
+                            <li><a class="dropdown-item" href="cultural.html">Cultural</a></li>
+                            <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">Guides</a>
+                    </li>
+                </ul>
             </div>
-        </li>
-        <li><a href="restaurants.html">Restaurants</a></li>
-        <li><a href="hotels.html">Hotels</a></li>
-        <li><a href="guides.html">Guides</a></li>
-    </ul>
-</header>
+        </div>
+    </nav>
 
 <section class="pagetitle">
     <h1>City Tourism in Albay</h1>
@@ -60,81 +81,58 @@
     </p>
 </section>
 
-<section class="zigzagsection">
-
-    <div class="zigzagbox">
-        <div class="zigzagitem">
-            <div class="zigzagimg">
-                <img src="img/legazpi.jpg" alt="Legazpi City">
-            </div>
-            <div class="zigzagtext">
-                <h3>Legazpi City</h3>
-                <p>
-                    Legazpi City is the most popular city in Albay, known for its great view of
-                    Mayon Volcano, busy streets, and tourist-friendly attractions.
-                </p>
+    <section class="detail-card-list">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/legazpi.jpg" class="card-img-top detail-media" alt="Legazpi City">
+                <div class="card-body detail-card-body">
+                    <h3>Legazpi City</h3>
+                <p>Legazpi City is the most popular city in Albay, known for its great view of Mayon Volcano, busy streets, and tourist-friendly attractions.</p>
                 <div class="beachmap">
                     <iframe src="https://www.google.com/maps?q=Legazpi%20City%20Albay&output=embed"></iframe>
                 </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="zigzagbox">
-        <div class="zigzagitem reverse">
-            <div class="zigzagimg">
-                <img src="img/ligao.jpg" alt="Ligao City">
-            </div>
-            <div class="zigzagtext">
-                <h3>Ligao City</h3>
-                <p>
-                    Ligao City is a peaceful place that offers local charm, open spaces,
-                    and easy access to natural attractions.
-                </p>
+                <div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/ligao.jpg" class="card-img-top detail-media" alt="Ligao City">
+                <div class="card-body detail-card-body">
+                    <h3>Ligao City</h3>
+                <p>Ligao City is a peaceful place that offers local charm, open spaces, and easy access to natural attractions.</p>
                 <div class="beachmap">
                     <iframe src="https://www.google.com/maps?q=Ligao%20City%20Albay&output=embed"></iframe>
                 </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="zigzagbox">
-        <div class="zigzagitem">
-            <div class="zigzagimg">
-                <img src="img/tabaco.jpg" alt="Tabaco City">
-            </div>
-            <div class="zigzagtext">
-                <h3>Tabaco City</h3>
-                <p>
-                    Tabaco City is known for its busy trade, local products, and gateway access
-                    to nearby islands and coastal destinations.
-                </p>
+                <div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/tabaco.jpg" class="card-img-top detail-media" alt="Tabaco City">
+                <div class="card-body detail-card-body">
+                    <h3>Tabaco City</h3>
+                <p>Tabaco City is known for its busy trade, local products, and gateway access to nearby islands and coastal destinations.</p>
                 <div class="beachmap">
                     <iframe src="https://www.google.com/maps?q=Tabaco%20City%20Albay&output=embed"></iframe>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="zigzagbox">
-        <div class="zigzagitem reverse">
-            <div class="zigzagimg">
-                <img src="img/guinobatan.jpg" alt="Guinobatan">
-            </div>
-            <div class="zigzagtext">
-                <h3>Guinobatan</h3>
-                <p>
-                    Guinobatan offers a quieter town atmosphere with beautiful surroundings
-                    and views close to Mayon Volcano.
-                </p>
-                <div class="beachmap">
-                    <iframe src="https://www.google.com/maps?q=Guinobatan%20Albay&output=embed"></iframe>
                 </div>
             </div>
         </div>
-    </div>
-
-</section>
+                <div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/guinobatan.jpg" class="card-img-top detail-media" alt="Guinobatan">
+                <div class="card-body detail-card-body">
+                    <h3>Guinobatan</h3>
+                <p>Guinobatan offers a quieter town atmosphere with beautiful surroundings and views close to Mayon Volcano.</p>
+                <div class="beachmap">
+                    <iframe src="https://www.google.com/maps?q=Guinobatan%20Albay&output=embed"></iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
 <section class="act">
     <h2>Things to Do</h2>
@@ -164,6 +162,12 @@
         <p>Email: xanderlauron543@gmail.com</p>
     </div>
 </footer>
-
 </body>
 </html>
+
+
+
+
+
+
+

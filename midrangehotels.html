@@ -1,41 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midrange Hotels in Albay</title>
     <link rel="icon" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="logo">
-            <div class="circle">
-                <img src="img/icon.png" alt="Albay Logo">
-            </div>
-            <h2>Discover <span>Albay</span></h2>
-        </div>
-
-        <ul class="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spots.html">Spots</a></li>
-            <li><a href="restaurants.html">Restaurants</a></li>
-
-            <li class="dropdown">
-                <a href="hotels.html">Hotels ▾</a>
-                <div class="menu">
-                    <a href="budgethotel.html">Budget Hotels</a>
-                    <a href="midrangehotels.html">Midrange Hotels</a>
-                    <a href="luxuryhotels.html">Luxury Hotels</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
                 </div>
-            </li>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
 
-            <li><a href="guides.html">Guides</a></li>
-        </ul>
-    </header>
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <section class="pagetitle">
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spots.html">Spots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="hotels-toggle" class="nav-section-toggle">
+                        <label for="hotels-toggle" class="nav-link nav-parent-toggle active">Hotels</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link" href="hotels.html">Hotels</a></li>
+                            <li><a class="dropdown-item" href="budgethotel.html">Budget Hotels</a></li>
+                            <li><a class="dropdown-item active" href="midrangehotels.html" aria-current="page">Midrange Hotels</a></li>
+                            <li><a class="dropdown-item" href="luxuryhotels.html">Luxury Hotels</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">Guides</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="pagetitle">
         <h1>Midrange Hotels in Albay</h1>
         <p>Comfortable and stylish places to stay for travelers who want good service, convenience, and reasonable prices in Albay.</p>
 
@@ -60,13 +79,13 @@
         <a href="luxuryhotels.html" class="hotelbtn">Luxury Hotels</a>
     </section>
 
-    <section class="hotelsection">
-        <div class="hotelcard">
-            <div class="hotelimg">
-                <img src="img/midrange1.webp" alt="Midrange Hotel 1">
-            </div>
-            <div class="hoteltext">
-                <h3>Albay Comfort Inn</h3>
+        <section class="detail-card-list">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/midrange1.webp" alt="Midrange Hotel 1">
+                <div class="card-body detail-card-body">
+                    <h3>Albay Comfort Inn</h3>
                 <p><strong>Location:</strong> Legazpi City, Albay</p>
                 <p class="hotelprice">₱2,500 – ₱4,000 per night</p>
                 <p>
@@ -77,16 +96,20 @@
                     <li>✔ Free Wi-Fi</li>
                     <li>✔ Breakfast available</li>
                 </ul>
-                <a href="#" class="hotelcardbtn">View More</a>
+                <p><strong>Best For:</strong> Families, couples, and business travelers who want comfort, breakfast options, and a central location.</p>
+                <p class="detail-note">How to Find: Search "Albay Comfort Inn Legazpi City Albay" on Google Maps or ask for midrange hotels near the city center.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Albay%20Comfort%20Inn%20Legazpi%20City%20Albay" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
 
-        <div class="hotelcard">
-            <div class="hotelimg">
-                <img src="img/midrange2.webp" alt="Midrange Hotel 2">
-            </div>
-            <div class="hoteltext">
-                <h3>Mayon View Lodge</h3>
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/midrange2.webp" alt="Midrange Hotel 2">
+                <div class="card-body detail-card-body">
+                    <h3>Mayon View Lodge</h3>
                 <p><strong>Location:</strong> Daraga, Albay</p>
                 <p class="hotelprice">₱3,000 – ₱4,800 per night</p>
                 <p>
@@ -97,16 +120,20 @@
                     <li>✔ Family-friendly rooms</li>
                     <li>✔ Parking area</li>
                 </ul>
-                <a href="#" class="hotelcardbtn">View More</a>
+                <p><strong>Best For:</strong> Guests who want a calmer stay with scenic surroundings and enough space for family or group travel.</p>
+                <p class="detail-note">How to Find: Search "Mayon View Lodge Daraga Albay" on Google Maps or ask for view lodges near Daraga.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Mayon%20View%20Lodge%20Daraga%20Albay" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
         </div>
 
-        <div class="hotelcard">
-            <div class="hotelimg">
-                <img src="img/midrange3.webp" alt="Midrange Hotel 3">
-            </div>
-            <div class="hoteltext">
-                <h3>Premier Stay Albay</h3>
+                                <div class="col">
+            <div class="card h-100 detail-card">
+                <img class="card-img-top detail-media" src="img/midrange3.webp" alt="Midrange Hotel 3">
+                <div class="card-body detail-card-body">
+                    <h3>Premier Stay Albay</h3>
                 <p><strong>Location:</strong> Tabaco City, Albay</p>
                 <p class="hotelprice">₱3,500 – ₱5,000 per night</p>
                 <p>
@@ -117,8 +144,14 @@
                     <li>✔ Restaurant on-site</li>
                     <li>✔ Friendly service</li>
                 </ul>
-                <a href="#" class="hotelcardbtn">View More</a>
+                <p><strong>Best For:</strong> Visitors who want dependable service, larger rooms, and a convenient hotel after a full day of touring.</p>
+                <p class="detail-note">How to Find: Search "Premier Stay Albay Tabaco City Albay" on Google Maps or ask for central hotels in Tabaco.</p>
+                <div class="card-action-row">
+                    <a href="https://www.google.com/maps?q=Premier%20Stay%20Albay%20Tabaco%20City%20Albay" class="detail-link" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                </div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -181,6 +214,13 @@
             <p>Email: xanderlauron543@gmail.com</p>
         </div>
     </footer>
-
 </body>
 </html>
+
+
+
+
+
+
+
+

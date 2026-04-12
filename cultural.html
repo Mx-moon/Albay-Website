@@ -1,42 +1,63 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tourism | Cultural</title>
     <link rel="icon" type="image/png" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
+                </div>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
 
-<header class="navbar">
-    <div class="logo">
-        <div class="circle">
-            <img src="img/icon.png" alt="Discover Albay Logo">
-        </div>
-        <h2>Discover <span>Albay</span></h2>
-    </div>
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <ul class="navlinks">
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="spots.html">Spots ▾</a>
-            <div class="menu">
-                <a href="beaches.html">Beaches</a>
-                <a href="mountains.html">Mountains</a>
-                <a href="lakes.html">Lakes</a>
-                <a href="cities.html">Cities</a>
-                <a href="historical.html">Historical</a>
-                <a href="cultural.html">Cultural</a>
-                <a href="parks.html">Parks</a>
-                <a href="adventure.html">Adventure</a>
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="spots-toggle" class="nav-section-toggle">
+                        <label for="spots-toggle" class="nav-link nav-parent-toggle active">Spots</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link" href="spots.html">Spots</a></li>
+                            <li><a class="dropdown-item" href="beaches.html">Beaches</a></li>
+                            <li><a class="dropdown-item" href="mountains.html">Mountains</a></li>
+                            <li><a class="dropdown-item" href="lakes.html">Lakes</a></li>
+                            <li><a class="dropdown-item" href="cities.html">Cities</a></li>
+                            <li><a class="dropdown-item" href="historical.html">Historical</a></li>
+                            <li><a class="dropdown-item active" href="cultural.html" aria-current="page">Cultural</a></li>
+                            <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">Guides</a>
+                    </li>
+                </ul>
             </div>
-        </li>
-        <li><a href="restaurants.html">Restaurants</a></li>
-        <li><a href="hotels.html">Hotels</a></li>
-        <li><a href="guides.html">Guides</a></li>
-    </ul>
-</header>
+        </div>
+    </nav>
 
 <section class="pagetitle">
     <h1>Cultural Tourism in Albay</h1>
@@ -60,81 +81,58 @@
     </p>
 </section>
 
-<section class="zigzagsection">
-
-    <div class="zigzagbox">
-        <div class="zigzagitem">
-            <div class="zigzagimg">
-                <img src="img/ibalong.jpg" alt="Ibalong Festival">
-            </div>
-            <div class="zigzagtext">
-                <h3>Ibalong Festival</h3>
-                <p>
-                    The Ibalong Festival is one of the most famous cultural celebrations in Albay,
-                    showing stories, costumes, dances, and local pride.
-                </p>
+    <section class="detail-card-list">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/ibalong.jpg" class="card-img-top detail-media" alt="Ibalong Festival">
+                <div class="card-body detail-card-body">
+                    <h3>Ibalong Festival</h3>
+                <p>The Ibalong Festival is one of the most famous cultural celebrations in Albay, showing stories, costumes, dances, and local pride.</p>
                 <div class="beachmap">
-                    <iframe src="https://www.google.com/maps?q=Legazpi%20City%20Albay&output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps?q=Ibalong%20Festival%20Legazpi&output=embed"></iframe>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="zigzagbox">
-        <div class="zigzagitem reverse">
-            <div class="zigzagimg">
-                <img src="img/museums.jpg" alt="Museums in Albay">
-            </div>
-            <div class="zigzagtext">
-                <h3>Museums and Galleries</h3>
-                <p>
-                    Museums and galleries in Albay display local history, art, and heritage that
-                    help visitors appreciate the culture of the province.
-                </p>
+                <div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/museums.jpg" class="card-img-top detail-media" alt="Museums and Galleries">
+                <div class="card-body detail-card-body">
+                    <h3>Museums and Galleries</h3>
+                <p>Museums and galleries in Albay display local history, art, and heritage that help visitors appreciate the culture of the province.</p>
                 <div class="beachmap">
-                    <iframe src="https://www.google.com/maps?q=Albay%20museum&output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps?q=museums%20albay&output=embed"></iframe>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="zigzagbox">
-        <div class="zigzagitem">
-            <div class="zigzagimg">
-                <img src="img/local.jpg" alt="Local Food">
-            </div>
-            <div class="zigzagtext">
-                <h3>Local Food and Delicacies</h3>
-                <p>
-                    Cultural tourism also includes tasting local food and delicacies that reflect
-                    the traditions and flavors of Albay.
-                </p>
+                <div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/local.jpg" class="card-img-top detail-media" alt="Local Food and Delicacies">
+                <div class="card-body detail-card-body">
+                    <h3>Local Food and Delicacies</h3>
+                <p>Cultural tourism also includes tasting local food and delicacies that reflect the traditions and flavors of Albay.</p>
                 <div class="beachmap">
-                    <iframe src="https://www.google.com/maps?q=Albay%20local%20food&output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps?q=local%20food%20albay&output=embed"></iframe>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="zigzagbox">
-        <div class="zigzagitem reverse">
-            <div class="zigzagimg">
-                <img src="img/handicraft.jpg" alt="Handicrafts">
-            </div>
-            <div class="zigzagtext">
-                <h3>Handicrafts and Traditions</h3>
-                <p>
-                    Local products, handicrafts, and community traditions show the creativity and
-                    values of the people of Albay.
-                </p>
+                <div class="col">
+            <div class="card h-100 detail-card">
+                <img src="img/handicraft.jpg" class="card-img-top detail-media" alt="Handicrafts and Traditions">
+                <div class="card-body detail-card-body">
+                    <h3>Handicrafts and Traditions</h3>
+                <p>Local products, handicrafts, and community traditions show the creativity and values of the people of Albay.</p>
                 <div class="beachmap">
-                    <iframe src="https://www.google.com/maps?q=Albay%20handicrafts&output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps?q=handicrafts%20albay&output=embed"></iframe>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</section>
+        </div>
+    </section>
 
 <section class="act">
     <h2>Things to Do</h2>
@@ -164,6 +162,12 @@
         <p>Email: xanderlauron543@gmail.com</p>
     </div>
 </footer>
-
 </body>
 </html>
+
+
+
+
+
+
+

@@ -1,41 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Albay | Restaurants</title>
     <link rel="icon" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/sub.css">
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="logo">
-            <div class="circle">
-                <img src="img/icon.png">
-            </div>
-            <h2>Discover <span>Albay</span></h2>
-        </div>
-
-        <ul class="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spots.html">Spots</a></li>
-
-            <li class="dropdown">
-                <a href="restaurants.html">Restaurants ▾</a>
-                <div class="menu">
-                    <a href="localfood.html">Local Food</a>
-                    <a href="cafes.html">Cafes</a>
-                    <a href="seafood.html">Seafood</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <div class="circle">
+                    <img src="img/icon.png" alt="Discover Albay Logo">
                 </div>
-            </li>
+                <span class="fw-bold brand-text">Discover <span class="gold">Albay</span></span>
+            </a>
 
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="guides.html">Guides</a></li>
-        </ul>
-    </header>
+                        <input type="checkbox" id="nav-toggle" class="navbar-toggle-checkbox">
+            <label for="nav-toggle" class="navbar-toggle-button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <section class="banner">
+            <div class="navbar-collapse navbar-menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spots.html">Spots</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <input type="checkbox" id="restaurants-toggle" class="nav-section-toggle">
+                        <label for="restaurants-toggle" class="nav-link nav-parent-toggle active">Restaurants</label>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-parent-link active" href="restaurants.html" aria-current="page">Restaurants</a></li>
+                            <li><a class="dropdown-item" href="localfood.html">Local Food</a></li>
+                            <li><a class="dropdown-item" href="cafes.html">Cafes</a></li>
+                            <li><a class="dropdown-item" href="seafood.html">Seafood</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">Guides</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="banner">
         <div class="bannercontent">
             <h1>Explore <span>Restaurants</span></h1>
             <p>Discover the best dining experiences in Albay.</p>
@@ -50,31 +69,47 @@
         </p>
     </section>
 
-    <div class="grid">
-        <a class="card" href="localfood.html">
-            <img src="img/local6.jpg">
-            <div class="card-text">
-                <h3>Local Food</h3>
-                <p>Authentic Bicolano dishes and local specialties.</p>
-            </div>
-        </a>
+    <section class="spots-grid-section">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <a href="localfood.html" class="text-decoration-none d-block h-100">
+                        <div class="card spot-card h-100">
+                            <img src="img/local6.jpg" class="card-img-top" alt="Local Food">
+                            <div class="card-body">
+                                <h5 class="card-title">Local Food</h5>
+                                <p class="card-text">Authentic Bicolano dishes and local specialties.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-        <a class="card" href="cafes.html">
-            <img src="img/cafe.jpg">
-            <div class="card-text">
-                <h3>Cafes</h3>
-                <p>Relaxing coffee shops with drinks and desserts.</p>
-            </div>
-        </a>
+                <div class="col-md-6 col-lg-4">
+                    <a href="cafes.html" class="text-decoration-none d-block h-100">
+                        <div class="card spot-card h-100">
+                            <img src="img/cafe.jpg" class="card-img-top" alt="Cafes">
+                            <div class="card-body">
+                                <h5 class="card-title">Cafes</h5>
+                                <p class="card-text">Relaxing coffee shops with drinks and desserts.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-        <a class="card" href="seafood.html">
-            <img src="img/seafood1.jpg">
-            <div class="card-text">
-                <h3>Seafood</h3>
-                <p>Fresh and flavorful seafood meals in Albay.</p>
+                <div class="col-md-6 col-lg-4">
+                    <a href="seafood.html" class="text-decoration-none d-block h-100">
+                        <div class="card spot-card h-100">
+                            <img src="img/seafood1.jpg" class="card-img-top" alt="Seafood">
+                            <div class="card-body">
+                                <h5 class="card-title">Seafood</h5>
+                                <p class="card-text">Fresh and flavorful seafood meals in Albay.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </a>
-    </div>
+        </div>
+    </section>
 
     <section class="visit">
         <h2>Why Try Restaurants in Albay</h2>
@@ -165,6 +200,13 @@
             <p>Email: xanderlauron543@gmail.com</p>
         </div>
     </footer>
-
 </body>
 </html>
+
+
+
+
+
+
+
+
